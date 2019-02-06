@@ -85,7 +85,7 @@ public class MazeView extends JFrame {
         int dotX = path.get(pathMazeIndex);
         int dotY = path.get(pathMazeIndex+1);
 
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.BLUE);
         g.fillOval(dotX * 30, dotY * 30, 30, 30);
 
         //render path
@@ -94,7 +94,7 @@ public class MazeView extends JFrame {
             int y = path.get(i+1);
 
             g.setColor(Color.GRAY);
-            g.fillRect(x * 30, y * 30, 20, 20);
+            g.fillRect(x * 30, y * 30, 15, 20);
         }
     }
 
